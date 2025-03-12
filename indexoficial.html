@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Tech - Stackx</title>
+    <link rel="stylesheet" href="style 3.css">
+</head>
+
+<body>
+
+
+    <nav class="Item_para_navegar">
+        <ul class="menu-ul">
+            <li>
+                <a href="#sobre_python_id" class="link-menu">Sobre Startup e IA</a>
+                <div>
+                    <span id="contador_Startup">Acessos startup: 0</span>
+                </div>
+            </li>
+            <li>
+                <a href="#sobre_inteligencia_id" class="link-menu">Sobre Inteligência Artificial</a>
+                <div>
+                    <span id="contador_inteligencia">Acessos Inteligencia artificial: 0</span>
+                </div>
+            </li>
+            <li>
+                <a href="#Realidade_virtual" class="link-menu">Sobre Realidade Virtual</a>
+                <div>
+                    <span id="contador_realidade_virtual">Acessos Realizadade Virtual: 0</span>
+                </div>
+            </li>
+            <li>
+                <a href="#tecnologia" class="link-menu">Sobre Python</a>
+                <div>
+                    <span id="contador_python">Acessos Python: 0</span>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="#inicio" class="cabecalho">
+        <section id="sobre_python_id" class="Projeto-blog-principal">
+            <div class="caixa-video">
+                <video src="./Vídeos/tech.mp4" loop muted autoplay></video>
+            </div>
+            <h2 class="Blog-projeto">Blog Tech Stackx</h2>
+            <div class="blog-caixa-principal">
+                <div class="projeto_cards">
+                    <img src="./img/Imagem IA - startup.png" alt="Imagem IA Startup" class="imagem-do-blog"
+                        onclick="Startup ()">
+                    <h3 class="Informacao_projeto">Startup levanta US$ 130 milhões para criar superinteligência</h3>
+                    <p class="paragrafo_projeto_python">A Reflection AI foca em IA autodirigida, visa automatizar
+                        tarefas complexas de codificação e acelerar o desenvolvimento de sistemas avançados</p>
+                </div>
+                <div class="projeto_cards">
+                    <img src="./img/Imagem realizada virtual para blog tech.jpg" alt="Imagem realidade virtual"
+                        class="imagem-do-blog" onclick="abrir_PostRV()">
+                    <h3 class="Informacao_projeto">E se você pudesse ser outra pessoa e estar em outro lugar?</h3>
+                    <p class="paragrago-projeto-blog">Realidade virtual: entenda o que é e como funciona a tecnologia.
+                    </p>
+                </div>
+                <div class="projeto_cards">
+                    <img src="./img/Inteligencia-artificial-criar-imagens-com-IA-1.png" alt="Imagem programadores"
+                        class="imagem-do-blog" onclick="Inteligencia_artificial()">
+                    <h3>O sol vai morrer antes dos desenvolvedores de software?</h3>
+                    <p class="texto_inteligencia_artificial">A IA avançará cada vez mais no apoio à codificação
+                        realizada pelos desenvolvedores.</p>
+                </div>
+                <div class="projeto_cards">
+                    <img src="./img/Python.png" alt="Imagem python" class="imagem-do-blog" onclick="python()">
+                    <h3 class="Informacao_projeto">Python chega ao topo das linguagens de programação</h3>
+                    <p class="paragrafo_projeto_python">O que isso revela sobre como o mundo está desenvolvendo software
+                        em 2025?</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script>
+
+        const link_IA_Startup = "http://127.0.0.1:5500/startup.html#";
+        function Startup() {
+
+            window.open(link_IA_Startup, "_blank");
+        }
+        const link_post = "http://127.0.0.1:5500/PaginaRVirtual.html";
+
+        function abrir_PostRV() {
+            window.open(link_post, "_blank");
+        }
+
+        const link_IA = "http://127.0.0.1:5500/paginaIA.html";
+
+        const link_python = "http://127.0.0.1:5500/python.html";
+
+        function python() {
+
+            window.open(link_python, "_blank");
+        }
+
+
+        function avanco_IA() {
+            let contador = localStorage.getItem("contadorIA") || 0;
+            contador++;
+            localStorage.setItem("contadorIA", contador);
+            document.getElementById("contador-ia").innerText = `Acessos: ${contador}`;
+            window.open(link_IA, "_blank");
+        }
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+            let contador = localStorage.getItem("contadorIA") || 0;
+            document.getElementById("contador-ia").innerText = `Acessos: ${contador}`;
+        });
+
+
+
+
+
+        function Startup() {
+            let contador = localStorage.getItem("contador_Startup") || 0;
+            contador++;
+            localStorage.setItem("contador_Startup", contador);
+            document.getElementById("contador_Startup").innerText = `Acessos: ${contador}`;
+            window.open(link_IA_Startup, "_blank");
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            let contador = localStorage.getItem("contador_Startup") || 0;
+            document.getElementById("contador_Startup").innerText = `Acessos Inteligencia artificial: ${contador}`;
+        });
+
+
+
+
+
+        function abrir_PostRV() {
+            let contador = localStorage.getItem("contador_realidade_virtual") || 0;
+            contador++;
+            localStorage.setItem("contador_realidade_virtual", contador);
+            document.getElementById("contador_realidade_virtual").innerText = `Acessos Realizadade Virtual: ${contador}`;
+            window.open(link_post, "_blank");
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            let contador = localStorage.getItem("contador_realidade_virtual") || 0;
+            document.getElementById("contador_realidade_virtual").innerText = `Acessos Realizadade Virtual: ${contador}`;
+        });
+
+
+
+
+
+        function Inteligencia_artificial() {
+            let contador = localStorage.getItem("contador_inteligencia") || 0;
+            contador++;
+            localStorage.setItem("contador_inteligencia", contador);
+            document.getElementById("contador_inteligencia").innerText = `Acessos Inteligencia artificial: ${contador}`;
+            window.open(link_IA, "_blank");
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            let contador = localStorage.getItem("contador_inteligencia") || 0;
+            document.getElementById("contador_inteligencia").innerText = `Acessos Inteligencia artificial: ${contador}`;
+        });
+
+
+
+
+
+        function python() {
+            let contador = localStorage.getItem("contador_python") || 0;
+            contador++;
+            localStorage.setItem("contador_python", contador);
+            document.getElementById("contador_python").innerText = `Acessos Python: ${contador}`;
+            window.open(link_python, "_blank");
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            let contador = localStorage.getItem("contador_python") || 0;
+            document.getElementById("contador_python").innerText = `Acessos Python: ${contador}`;
+        });
+
+    </script>
+</body>
+
+</html>

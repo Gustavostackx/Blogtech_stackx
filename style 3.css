@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+:root {
+    --primaria: #4f46e5;
+    --secundaria: hwb(259 42% 46%);
+    --escuro: #0f172a;
+    --claro: #e2e8f0;
+}
+
+body {
+
+    background-color: var(--escuro);
+    color: var(--claro)
+}
+
+.caixa-video {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    position:fixed;
+
+}
+
+.Item_para_navegar {
+
+    position: relative;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    padding: 1.5 rem;
+
+}
+
+.menu-ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+.link-menu {
+    text-decoration: none;
+    color: rgb(243, 240, 255);
+    font-weight: 600;
+    position: relative;
+    padding: 1.5rem 0;
+
+}
+
+.link-menu:after {
+
+    content: '';
+    height: 2vh;
+    weight: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(98deg, var(--primaria, var(--secundaria)));
+
+
+}
+
+.Projeto-blog-principal {}
+
+.espaçamento-imagem-texto {
+    padding: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.Blog-projeto {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: bottom 50px;
+    ;
+
+
+
+
+
+}
+
+.imagem-do-blog {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    background: hwb(252 16% 34%);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--escuro);
+    transition: all 0.5s ease;
+    padding: 1.5rem;
+    margin-bottom: 5px;
+    overflow: hidden;
+
+
+
+}
+
+.projeto_cards {
+    background: rgb(60, 37, 149);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--escuro);
+    overflow: hidden;
+    transition: all 0.5s ease;
+    padding: 1.5rem;
+    margin-bottom: 5px;
+    z-index: 10;
+}
+
+
+.projeto_cards:hover {
+    box-shadow: 0 10px 20px rgba (79, 70, 229, 0.2);
+    transform: translateY(-10px) scale(1.03);
+}
+
+.blog-caixa-principal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.imagem-do-blog:hover {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+}

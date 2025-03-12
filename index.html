@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Blog tech</title>
+
+</head>
+
+<body>
+
+    <div class="caixa-video">
+
+        <video src="./Vídeos/tech.mp4" loop muted autoplay></video>
+    </div>
+
+    <div class="sombreamento"></div>
+
+    <header>
+
+
+        <section>
+            <div class="conteiner-caixas">
+
+              
+
+                <div class="caixa-conteudo_realidade_virtual" onclick="abrir_PostRV()"> Saiba mais</div>
+
+                    <h2 class="titulo-do-blog">E se você pudesse ser outra pessoa e estar em outro lugar?</h2>
+                    <p class="trecho-curto-blog">Realidade virtual: entenda o que é e como funciona a tecnologia.</p>
+                    <img src="img/Imagem realizada virtual para blog tech.jpg" alt="Imagem realidade virtual" style="width: 300px; height: 300px; border-radius: 30%; object-fit: cover;">
+                
+                </div>
+        </section>
+
+<section>
+
+    <div class="caixa_IA">
+
+        <h3 class="titulo-do-blog-IA" onclick="avanco_IA()">Saiba Mais</h3>
+        <h4 class="segundo_item_IA">O sol vai morrer antes dos desenvolvedores de software?</h4>
+        <p class="trecho-curto-blog">A IA avançará cada vez mais no apoio à codificação realizada pelos desenvolvedores.</p>
+        <img src="img/Img programadores mais IA.png" alt="Imagem IA mais programadores" style="width: 300px; height: 300px; border-radius: 30%; object-fit: cover;">
+    </div>
+</section>
+        
+       
+        <script>
+            const link_post = "https://www.techtudo.com.br/noticias/2023/03/realidade-virtual-entenda-o-que-e-e-como-funciona-a-tecnologia-edinfoeletro.ghtml";
+    
+            
+            function abrir_PostRV() {
+                window.open(link_post, "_blank");
+            }
+
+            const link_IA = "https://www.computerweekly.com/br/opinion/O-sol-vai-morrer-antes-dos-desenvolvedores-de-software"
+
+            function avanco_IA() {
+                window.open(link_IA, "_blank");
+            }
+
+        </script>
+        <section>
+        <div class="container-geral-python">
+        <div class="caixa-python" onclick="linguagem_phython()">Clique aqui para saber mais</div>
+            <h2 class="titulo-do-blog-phyton">Python chega ao topo das linguagens de programação</h2>
+            <p class="trecho-curto-blog-phyton">O que isso revela sobre como o mundo está desenvolvendo software?
+                2025?</p>
+            <img src="img/Python.png" alt="Imagem Python" style="width: 300px; height: 300px; border-radius: 30%; object-fit: cover;">
+        </div>
+        <div>
+</section>
+
+<script>
+const link_post_phython = "https://www.baguete.com.br/noticias/python-chega-ao-topo-das-linguagens-de-programacao";
+
+function linguagem_phython() {
+    window.open(link_post_phython, "_blank");
+}
+</script>
+
+    </header>
+    <div>
+
+    </div>
+
+    
+    </div>
+</body>
+
+</html>
